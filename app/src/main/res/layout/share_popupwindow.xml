@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="500px">
+  <TextView
+          android:id="@+id/hs_id"
+         android:layout_gravity="center"
+        android:gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="20px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <TextView
+           android:background="@drawable/tui_wx"
+           android:id="@+id/wx"
+           android:layout_marginLeft="30px"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:background="@drawable/tui_pyq" />
+        <TextView
+            android:id="@+id/share_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:background="@drawable/tui_qq" />
+        <TextView
+            android:id="@+id/share_kj"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:background="@drawable/tui_kj" />
+        <TextView
+            android:id="@+id/share_web"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:background="@drawable/tui_wb" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30px"
+        android:id="@+id/sc"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="@drawable/sc"
+            android:layout_marginLeft="30px"
+            android:layout_width="70px"
+            android:layout_height="70px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="5dp"
+            android:text="收藏"
+           />
+
+
+    </LinearLayout>
+    <TextView
+        android:text="取消"
+        android:id="@+id/qx_pop"
+        android:layout_marginTop="15px"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

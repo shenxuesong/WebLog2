@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              android:clipToPadding="true"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<TextView
+    android:text="最近二十篇文章"
+    android:textSize="25px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/MainRlv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

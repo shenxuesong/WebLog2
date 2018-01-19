@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--协调者布局-->
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--第一个view必须是AppBarLayout-->
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:layout_height="wrap_content">
+
+            <!--将需要画上去的头头用CollapsingToolbarLayout包裹 一定要添加属性layout_scrollFlags-->
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                android:layout_height="300px">
+                <ImageView
+                    android:id="@+id/iew_pager_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/two"
+                    android:scaleType="fitXY"
+                    >
+                </ImageView>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <!--将需要固定的悬浮在上面的头放在这里-->
+            <TextView
+                android:gravity="center"
+                android:text="阮一峰日志"
+                android:layout_width="match_parent"
+                android:layout_height="50px" />
+        </android.support.design.widget.AppBarLayout>
+        <!--网络加载布局展示 -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/JXRlv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>
